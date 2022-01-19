@@ -5,7 +5,6 @@ class Solution {
 
         //for loop - for each rotation
         for(int i = 0; i<rotations; i++){
-            System.out.println("\n\nThis is rotation "+i);
 
             //outside rotation first
             int[] right = new int[n-2*i];
@@ -20,26 +19,6 @@ class Solution {
                 bottom[j] = matrix[n-i-1][n-i-1-j];
                 left[j] = matrix[n-i-1-j][i];
                 top[j] = matrix[i][j+i];
-            }
-
-            System.out.println("\nRight: ");
-            for(int j:right){
-                System.out.print(j+" ");
-            }
-
-            System.out.println("\nBottom: ");
-            for(int j:bottom){
-                System.out.print(j+" ");
-            }
-
-            System.out.println("\nLeft: ");
-            for(int j:left){
-                System.out.print(j+" ");
-            }
-
-            System.out.println("\nTop: ");
-            for(int j:top){
-                System.out.print(j+" ");
             }
 
             for(int j = 0; j< right.length; j++){
