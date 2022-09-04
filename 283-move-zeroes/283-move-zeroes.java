@@ -11,6 +11,7 @@ class Solution {
                     comparison++;
                 }
 
+                System.out.println(nums[i]+" in position "+i+" is being compared with "+nums[comparison]+" in position "+comparison);
 
                 nums[i] = nums[comparison];
                 nums[comparison] = 0;
